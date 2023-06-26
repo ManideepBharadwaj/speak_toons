@@ -15,6 +15,10 @@ from IPython.display import Audio, clear_output
 
 from main_functions import *
 
+if os.path.exists('./voice_database'):
+    pass
+else:
+    os.mkdir("./voice_database")
 
 def add_user():
     
@@ -79,6 +83,10 @@ def add_user():
         waveFile.close()
         print("Done")
         
+    if not os.path.exists("./gmm_models"):
+      os.mkdir("./gmm_models")
+    else:
+      pass
     dest =  "./gmm_models/"
     count = 1
     
