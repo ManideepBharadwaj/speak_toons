@@ -10,9 +10,10 @@ from pydub import AudioSegment
 from scipy.io import wavfile
 from playsound import playsound
 import multiprocessing
+import os
 
 f = text_to_speech()
-
+openai.api_key = os.getenv("OPENAI_API_KEY")
 class speak_toons(object):
     def __init__(self):
         filename = 'speech.wav'
