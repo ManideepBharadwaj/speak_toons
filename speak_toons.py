@@ -11,6 +11,7 @@ from scipy.io import wavfile
 from playsound import playsound
 import multiprocessing
 import os
+import openai
 
 f = text_to_speech()
 openai.api_key = os.getenv("OPENAI_API_KEY")
