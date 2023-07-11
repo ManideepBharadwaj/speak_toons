@@ -59,7 +59,7 @@ class asr(object):
         
         print("finished recording")
     
-        aai.settings.api_key = "80753aa91eba47cf84b5e19f72a23177"
+        aai.settings.api_key = <api-key>
         transcriber = aai.Transcriber()
     
         transcript = transcriber.transcribe(FILENAME)
